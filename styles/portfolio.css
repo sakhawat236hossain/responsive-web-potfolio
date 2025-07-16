@@ -180,23 +180,60 @@ footer input[type="text"],  footer input[type="email"], footer textarea{
     border: none;
 }
 /* responsive media quary */
-.hide{
-    display: none;
-}
+
 @media screen and (max-width: 576px) {
 
-    .skills-container, .resume-container, footer, .about-items {
+    .skills-container, 
+    .resume-container,
+    nav,
+    nav > ul,
+    .banner, 
+    footer, 
+    .about-items {
       /* background-color: #FD6E0A; */
       flex-direction: column;
     }
+    nav > ul{
+        gap: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+
+
     footer, .about{
         padding: 20px;
 
     }
+
+    .banner{
+        margin: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+
+
+    .header{
+        background-image: none;
+    }
+
+
     .footer-column{
         width: 100%;
     }
+
+
     footer input[type="text"],  footer input[type="email"], footer {
         width: calc(100% - 40px);
     }
 }
+/* tablet specific media query */
+
+@media screen and (min-width: 576px) and (max-width: 990px) {
+  .banner{
+    flex-direction: column;
+  }  
+}
+
+
